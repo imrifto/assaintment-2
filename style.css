@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.container {
+  width: 1321px;
+  margin: 0 auto;
+}
+section {
+  margin-top: 5%;
+}
+/* -------------------------------------------------------- Header*/
+.head-wraper {
+  display: flex;
+  /* width: 1321px; */
+  padding: 20px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+  background-color: black;
+  border-radius: 40px;
+}
+.head-title h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+}
+.head-title p {
+  margin-bottom: 10%;
+}
+.head-img img {
+  width: 581px;
+  position: relative;
+  top: 27px;
+}
+.head-title a {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 16px 25px;
+}
+/* ---------------------------------------------------Main */
+/* ---------------------------------------------------left-button */
+main{
+  margin-bottom: 50px;
+}
+.all-button {
+  display: grid;
+  background-color: black;
+  height: 312px;
+  width: 312px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.red,
+.white {
+  height: 64px;
+  width: 252px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.red {
+  background-color: red;
+  color: white;
+}
+.white {
+  background-color: white;
+}
+/* ---------------------------------------------- blog */
+.all-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.blog-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.box{
+  display: grid;
+  margin: 10px;
+  border: 1px solid #E8E8E8;
+  border-radius: 0px 10px 10px;
+  align-content: center;
+  height: 242px;
+  width: 312px;
+  text-align: center;
+}
+/* ----------------------------------footer */
+footer{
+  padding: 40px 0px;
+  background-color: black;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+/* ---------------------------------------------------Responsive */
+@media screen and (max-width:662px) {
+  .container{
+    width: 100%;
+  }
+  /* ------------------------------- */
+  .head-wraper{
+    flex-direction: column;
+  }
+  .head-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .head-title h1{
+    width: 228px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: center;
+  }
+  .head-title p{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    width: 258px;
+  }
+  .head-title a{
+    text-align: center;
+  }
+  .head-img img{
+    position: relative;
+    top: 27px;
+    left: 20px;
+    width: 100%;
+  }
+  /* ------------------------------- */
+  .all-wrap{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-wrapper{ grid-template-columns: repeat(1, 1fr);}
